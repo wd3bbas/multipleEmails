@@ -49,7 +49,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         msg.attach(part)
         text = msg.as_string()
 
-        server.sendmail('mohed.alabbas@gmail.com', email, text)
+        server.sendmail('testemail@gmail.com', email, text)
 
         print("email sent to {}".format(email))
         time.sleep(5)
